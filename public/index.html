@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='/index.css' rel='stylesheet'/>
+    <script src='http://code.jquery.com/jquery-1.6.1.min.js'></script>
+    <script src='TweenMax.min.js'></script>
+    <script src='/socket.io/socket.io.js'></script>
+    <script src='/index.js'></script>
+  </head>
+  <body>
+  <div class="mainWrapper">
+   <div id="chat">
+      <div id="nickname">
+        <form class="wrap" id="set-nickname">
+          <input id="nick" name="nick" type="text" placeholder="Type Your Name" autocomplete="off" />
+          <input type="submit" value="Enter" class="submit">
+          <p id="nickname-err">Nickname already in use</p>
+        </form>
+      </div>
+      <div id="connecting">
+        <div class="wrap">Connecting to socket.io server</div>
+      </div>
+      <div id="messages">
+        <div id="nicknames"></div>
+        <div id="lines"></div>
+      </div>
+      <form id="send-message">
+        <input id="message" type="text" placeholder="Type here..." autocomplete="off"/>
+        <div>
+          <button value="" class="send">Send</button>
+          <div class="filebutton">Send Image<input type="file" id="imagefile" accept="image/*"></div>
+          <div class="openLibraryButton"><a href="javascript:;">Open image library</a></div>
+        </div>
+      </form>
+      <div class="imageLibraryWrap">
+      <ul>
+      <li><img src="img/1.jpg"  alt=""/></li>
+      <li><img src="img/2.jpg"  alt=""/></li>
+      <li><img src="img/3.jpg"  alt=""/></li>
+      <li><img src="img/4.jpg"  alt=""/></li>
+      <li><img src="img/5.gif"  alt=""/></li>
+      <li><img src="img/6.gif"  alt=""/></li>
+      <li><img src="img/7.gif"  alt=""/></li>
+      </ul>
+      </div>
+      </div>
+  </body>
+</html>

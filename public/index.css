@@ -296,10 +296,10 @@ button:focus, {
 	margin:0px;
 	padding:0px;
 	list-style:none;
-	display:table;
+	width:2000px;
 }
 .imageLibraryWrap ul li{
-	display:table-cell;
+	float:left;
 	vertical-align:middle;
 	width:260px;
 	margin-right:10px;

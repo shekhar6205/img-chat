@@ -191,6 +191,8 @@ label {
   background:#e7e7e7;
   font-family: 'Lato', sans-serif;
   font-size:20px;
+  -webkit-appearance: none;
+    border-radius: 0;
 }
 #send-message input:focus {
   outline: 0;
@@ -216,6 +218,8 @@ button, div.filebutton {
   position:relative;
   height:40px;
   float:left;
+  -webkit-appearance: none;
+    border-radius: 0;
 }
 button:hover, div.filebutton:hover,
 button.hover, div.filebutton.hover,
@@ -244,6 +248,8 @@ button:focus, {
 	color:#000;
 	border:#000 solid 1px;
 	margin:20px 0 0 0;
+	-webkit-appearance: none;
+    border-radius: 0;
 }
 .openLibraryButton{
   -webkit-user-select: none;
@@ -264,6 +270,8 @@ button:focus, {
   position:relative;
   height:40px;
   float:left;
+  -webkit-appearance: none;
+    border-radius: 0;
 }
 .openLibraryButton a{
 	color:#000;

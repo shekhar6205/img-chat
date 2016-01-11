@@ -291,6 +291,7 @@ button:focus, {
 	overflow:hidden;
 	overflow-x:auto;
 	padding:0px;
+	display:none;
 }
 .imageLibraryWrap ul{
 	margin:0px;

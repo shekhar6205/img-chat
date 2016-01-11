@@ -90,7 +90,7 @@
 	$(".imageLibraryWrap ul li img").click(function(){
 		image('me', $(this).attr("src"));
         socket.emit('user image', $(this).attr("src"));
-		TweenMax.to($(".imageLibraryWrap"), 0.6, {bottom:"-300", ease: Back. easeOut});
+		TweenMax.to($(".imageLibraryWrap"), 0.6, {bottom:"-300", ease: Back. easeOut, onComplete:function(){$(".imageLibraryWrap").hide();}});
 		$('#lines').get(0).scrollTop = 10000000;
 	});
   });
@@ -98,6 +98,7 @@
 //jquery script
 $(function(){
 	$(".openLibraryButton a").click(function(){
+		$(".imageLibraryWrap").show();
 		TweenMax.to($(".imageLibraryWrap"), 0.6, {bottom:0, ease: Back. easeOut});
 	});
 	$(document).mouseup(function (e)
@@ -107,7 +108,7 @@ $(function(){
 	if (!container.is(e.target) // if the target of the click isn't the container...
 		&& container.has(e.target).length === 0) // ... nor a descendant of the container
 	{
-		TweenMax.to($(".imageLibraryWrap"), 0.6, {bottom:"-300", ease: Back. easeOut});
+		TweenMax.to($(".imageLibraryWrap"), 0.6, {bottom:"-300", ease: Back. easeOut, onComplete:function(){$(".imageLibraryWrap").hide();}});
 	}
 	});
 });  

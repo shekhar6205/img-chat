@@ -8,16 +8,13 @@
     "socket.io-client": "*",
     "uglify-js": "*"
   },
-  "scripts": {
-  	"start": "node index.js"
-  },
   "main": "public/index.js",
   "engines": {
     "node": "*"
   },
   "subdomain": "xyz",
   "scripts": {
-    "start": "/server/server.js"
+    "start": "node server/server.js"
   },
   "name": "test7"
 }

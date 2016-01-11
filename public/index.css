@@ -327,4 +327,8 @@ button:focus, {
 	overflow:hidden;
 	position:relative;
 }
+input {
+    -webkit-appearance: none;
+    border-radius: 0;
+}
 

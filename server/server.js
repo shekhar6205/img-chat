@@ -3,10 +3,10 @@
     path = require('path'),
     sio = require('socket.io'),
     static = require('node-static');
-
+  var port = process.env.PORT || 3000;
   var app = require('http').createServer(handler);
-  app.listen(3000);
-
+  app.listen(port);
+console.log(port);
   var file = new static.Server(path.join(__dirname, '..', 'public'));
 
   function handler(req, res) {

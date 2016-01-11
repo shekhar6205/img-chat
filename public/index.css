@@ -47,7 +47,7 @@ html, body{ height:100%;}
 }
 #nickname .wrap,
 #connecting .wrap {
-  padding-top: 85%;
+  padding-top: 35%;
 }
 #nickname #nick {
   padding: 10px;
@@ -291,7 +291,6 @@ button:focus, {
 	overflow:hidden;
 	overflow-x:auto;
 	padding:0px;
-	display:none;
 }
 .imageLibraryWrap ul{
 	margin:0px;

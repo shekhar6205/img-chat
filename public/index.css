@@ -58,6 +58,7 @@ html, body{ height:100%;}
   color: #777;
   border:0;
   border-bottom:#000 solid 1px;
+  border-radius:0;
 }
 
 label {
